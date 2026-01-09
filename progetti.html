@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progetti — Studio Ascone Modica</title>
+  <meta name="description" content="Selezione di progetti di architettura d’interni e recupero edilizio realizzati dallo studio." />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .back-link {
+      display: inline-block;
+      margin-bottom: var(--spacing-md);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid transparent;
+    }
+    .back-link:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .project {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .project:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .project h3 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project .meta {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Torna alla home</a>
+      <h1>Progetti</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <p style="margin-bottom: var(--spacing-md);">
+        Di seguito una selezione di interventi realizzati negli ultimi anni.  
+        Le immagini saranno disponibili prossimamente. Per maggiori dettagli su un progetto specifico, 
+        <a href="contatti.html" style="color: var(--text); text-decoration: none; border-bottom: 1px solid transparent;"
+           onmouseover="this.style.borderBottomColor='var(--accent)'"
+           onmouseout="this.style.borderBottomColor='transparent'">
+          non esitare a contattarmi
+        </a>.
+      </p>
+
+      <div class="project">
+        <h3>Ristrutturazione appartamento Liberty</h3>
+        <div class="meta">Palermo – 2024</div>
+        <p>
+          Recupero integrale di un appartamento d’epoca nel centro storico, con valorizzazione 
+          degli elementi originali (stucchi, pavimenti in marmo, soffitti alti) e integrazione 
+          di impianti moderni e spazi funzionali per una giovane famiglia.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Negozio di artigianato contemporaneo</h3>
+        <div class="meta">Partinico – 2023</div>
+        <p>
+          Progettazione di un piccolo spazio commerciale dedicato alla vendita di oggetti 
+          in ceramica e tessuti siciliani. L’idea guida è stata quella di creare un “salotto” 
+          accogliente, dove il prodotto diventa protagonista senza bisogno di illuminazione 
+          teatrale o pareti neutre.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Riqualificazione di un monolocale storico</h3>
+        <div class="meta">Palermo – 2022</div>
+        <p>
+          Trasformazione di un ex deposito in un micro-appartamento di 35 mq, con zona notte 
+          soppalcata, bagno a vista rivestito in cotto e cucina integrata nel living. 
+          Massima efficienza in uno spazio minimo, senza rinunciare alla qualità dei materiali.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Villa mediterranea – Restyling interni</h3>
+        <div class="meta">Bagheria – 2021</div>
+        <p>
+          Intervento su una villa degli anni ’70 con ampio giardino. Rinnovo degli interni 
+          con palette cromatica ispirata alla terra siciliana, nuovi infissi in legno-alluminio 
+          e ridefinizione degli spazi aperti per favorire la connessione con l’esterno.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Studio Ascone Modica. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
