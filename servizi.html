@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servizi — Studio Ascone Modica</title>
+  <meta name="description" content="Interventi di progettazione d’interni, recupero edilizio, ristrutturazioni e consulenze tecniche su misura." />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .back-link {
+      display: inline-block;
+      margin-bottom: var(--spacing-md);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid transparent;
+    }
+    .back-link:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .service {
+      margin-bottom: 2.2rem;
+    }
+
+    .service h3 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Torna alla home</a>
+      <h1>Servizi</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <p style="margin-bottom: var(--spacing-md);">
+        Ogni progetto è unico, così come le esigenze di chi lo abita.  
+        Di seguito le principali aree di intervento dello studio.
+      </p>
+
+      <div class="service">
+        <h3>Progettazione d’interni</h3>
+        <p>
+          Dalla definizione del layout funzionale alla scelta dei materiali, degli arredi e dell’illuminazione, 
+          ogni dettaglio viene curato per rispondere alle abitudini quotidiane del cliente. 
+          L’obiettivo è creare ambienti belli da vivere, non solo da guardare.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Ristrutturazione e recupero edilizio</h3>
+        <p>
+          Interventi su edifici esistenti, con particolare attenzione al patrimonio storico e alle costruzioni tradizionali. 
+          Il progetto cerca di valorizzare ciò che già esiste — travi a vista, pavimenti in cotto, murature in pietra — 
+          integrandolo con impianti moderni, comfort abitativo e normative vigenti.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Spazi commerciali e hospitality</h3>
+        <p>
+          Progettazione di negozi, uffici, B&B e piccole strutture ricettive, dove identità visiva, funzionalità 
+          e accoglienza si fondono in un’unica esperienza per il cliente o l’ospite.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Consulenze tecniche</h3>
+        <p>
+          Supporto per pratiche edilizie, certificazioni energetiche, adeguamenti normativi (antisismica, accessibilità), 
+          direzione lavori e coordinamento con artigiani e imprese. Un accompagnamento chiaro e trasparente, 
+          dall’idea alla consegna delle chiavi.
+        </p>
+      </div>
+
+      <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #eee;">
+        Non offro pacchetti standardizzati. Ogni incarico parte da un incontro conoscitivo, 
+        senza impegno, per comprendere insieme obiettivi, tempi e budget realistici.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Studio Ascone Modica. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
