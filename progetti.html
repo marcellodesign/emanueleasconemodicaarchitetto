@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Progetti — Studio Ascone Modica</title>
-  <meta name="description" content="Selezione di progetti di architettura d’interni e recupero edilizio realizzati dallo studio." />
+  <meta name="description" content="Selezione di progetti di architettura d’interni e recupero edilizio realizzati da Emanuele Ascone Modica a Palermo e in Sicilia." />
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
     }
 
     .project {
-      margin-bottom: 3rem;
-      padding-bottom: 2rem;
+      margin-bottom: 3.5rem;
+      padding-bottom: 2.5rem;
       border-bottom: 1px solid #eee;
     }
 
@@ -39,15 +39,47 @@
     .project h3 {
       font-family: var(--font-serif);
       font-weight: 500;
-      font-size: 1.4rem;
+      font-size: 1.45rem;
       margin-bottom: 0.5rem;
+      color: var(--text);
     }
 
     .project .meta {
       color: var(--text-light);
       font-size: 0.95rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
       font-style: italic;
+    }
+
+    /* Immagini */
+    .project-image {
+      width: 100%;
+      height: auto;
+      margin: 1.4rem 0;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      display: block;
+    }
+
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin: 1.4rem 0;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .project-gallery {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -62,53 +94,77 @@
   <main class="main">
     <div class="container">
       <p style="margin-bottom: var(--spacing-md);">
-        Di seguito una selezione di interventi realizzati negli ultimi anni.  
-        Le immagini saranno disponibili prossimamente. Per maggiori dettagli su un progetto specifico, 
+        Una selezione di interventi realizzati da <strong>Emanuele Ascone Modica</strong> negli ultimi anni.  
+        Ogni progetto nasce da un confronto diretto con il committente e dal rispetto del contesto storico e ambientale.  
+        Le immagini sono disponibili per i lavori più recenti; per ulteriori dettagli, 
         <a href="contatti.html" style="color: var(--text); text-decoration: none; border-bottom: 1px solid transparent;"
            onmouseover="this.style.borderBottomColor='var(--accent)'"
            onmouseout="this.style.borderBottomColor='transparent'">
-          non esitare a contattarmi
+          scrivimi senza impegno
         </a>.
       </p>
 
+      <!-- Progetto 1 -->
       <div class="project">
         <h3>Ristrutturazione appartamento Liberty</h3>
         <div class="meta">Palermo – 2024</div>
+        
+        <img src="img/progetti/palermo-liberty-01.jpg" alt="Soggiorno con stucchi originali e arredi contemporanei, Palermo" class="project-image">
+
         <p>
-          Recupero integrale di un appartamento d’epoca nel centro storico, con valorizzazione 
-          degli elementi originali (stucchi, pavimenti in marmo, soffitti alti) e integrazione 
-          di impianti moderni e spazi funzionali per una giovane famiglia.
+          Recupero integrale di un appartamento d’epoca nel centro storico di Palermo, con valorizzazione 
+          degli elementi originali — stucchi floreali, pavimenti in marmo, soffitti alti — e integrazione 
+          di impianti moderni e spazi funzionali per una giovane famiglia. L’intervento ha restituito 
+          luminosità agli ambienti senza snaturare l’identità liberty dell’edificio.
         </p>
       </div>
 
+      <!-- Progetto 2 -->
       <div class="project">
         <h3>Negozio di artigianato contemporaneo</h3>
         <div class="meta">Partinico – 2023</div>
+        
+        <div class="project-gallery">
+          <img src="img/progetti/partinico-negozio-01.jpg" alt="Vetrina minimalista con ceramiche siciliane, Partinico">
+          <img src="img/progetti/partinico-negozio-02.jpg" alt="Interno del negozio con scaffalature in legno naturale">
+        </div>
+
         <p>
-          Progettazione di un piccolo spazio commerciale dedicato alla vendita di oggetti 
-          in ceramica e tessuti siciliani. L’idea guida è stata quella di creare un “salotto” 
-          accogliente, dove il prodotto diventa protagonista senza bisogno di illuminazione 
-          teatrale o pareti neutre.
+          Progettazione di un piccolo spazio commerciale dedicato alla vendita di oggetti in ceramica 
+          e tessuti siciliani. L’idea guida è stata quella di creare un “salotto” accogliente, 
+          dove il prodotto diventa protagonista senza bisogno di illuminazione teatrale o pareti neutre. 
+          Materiali locali, tonalità calde e luci diffuse definiscono l’atmosfera.
         </p>
       </div>
 
+      <!-- Progetto 3 -->
       <div class="project">
         <h3>Riqualificazione di un monolocale storico</h3>
         <div class="meta">Palermo – 2022</div>
+        
+        <img src="img/progetti/palermo-monolocale-01.jpg" alt="Monolocale ristrutturato con soppalco e cucina integrata, Palermo" class="project-image">
+
         <p>
           Trasformazione di un ex deposito in un micro-appartamento di 35 mq, con zona notte 
-          soppalcata, bagno a vista rivestito in cotto e cucina integrata nel living. 
-          Massima efficienza in uno spazio minimo, senza rinunciare alla qualità dei materiali.
+          soppalcata, bagno a vista rivestito in cotto fatto a mano e cucina integrata nel living. 
+          Massima efficienza in uno spazio minimo, senza rinunciare alla qualità dei materiali 
+          né al dialogo con il contesto storico del quartiere.
         </p>
       </div>
 
+      <!-- Progetto 4 (solo testo – foto in arrivo) -->
       <div class="project">
         <h3>Villa mediterranea – Restyling interni</h3>
         <div class="meta">Bagheria – 2021</div>
+        
+        <!-- Foto in arrivo – puoi commentare questa riga finché non hai l'immagine -->
+        <!-- <img src="img/progetti/bagheria-villa-01.jpg" alt="Soggiorno con affaccio sul giardino, Bagheria" class="project-image"> -->
+
         <p>
           Intervento su una villa degli anni ’70 con ampio giardino. Rinnovo degli interni 
           con palette cromatica ispirata alla terra siciliana, nuovi infissi in legno-alluminio 
-          e ridefinizione degli spazi aperti per favorire la connessione con l’esterno.
+          e ridefinizione degli spazi aperti per favorire la connessione visiva e fisica con l’esterno. 
+          <em>Foto disponibili a breve.</em>
         </p>
       </div>
     </div>
