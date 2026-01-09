@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grazie — Studio Ascone Modica</title>
+  <meta name="description" content="Grazie per avermi contattato. Ti risponderò al più presto." />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .thank-you {
+      text-align: center;
+      padding: 4rem 1.5rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .thank-you h1 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .thank-you p {
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+
+    .back-home {
+      display: inline-block;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .back-home:hover {
+      border-bottom-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="thank-you">
+      <h1>Grazie per il tuo messaggio</h1>
+      <p>
+        Ho ricevuto la tua richiesta e ti risponderò al più presto, 
+        solitamente entro 2-3 giorni lavorativi.
+      </p>
+      <p>
+        Nel frattempo, puoi tornare alla <a href="index.html" class="back-home">pagina principale</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Studio Ascone Modica. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
