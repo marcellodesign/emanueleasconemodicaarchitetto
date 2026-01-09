@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chi sono — Studio Ascone Modica</title>
+  <meta name="description" content="Profilo professionale dell’architetto Emanuele Ascone Modica: esperienza, formazione e approccio progettuale." />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Stile aggiuntivo solo per questa pagina, se necessario */
+    .back-link {
+      display: inline-block;
+      margin-bottom: var(--spacing-md);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid transparent;
+    }
+    .back-link:hover {
+      border-bottom-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Torna alla home</a>
+      <h1>Chi sono</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <p>
+        Emanuele Ascone Modica è architetto iscritto all’Ordine degli Architetti di Palermo dal 2001.
+        Da oltre 25 anni si dedica alla progettazione d’interni, al recupero di edifici esistenti 
+        e alla riqualificazione di spazi residenziali e commerciali con un approccio artigianale 
+        e attento al contesto.
+      </p>
+
+      <p>
+        Formatosi tra Palermo, Agrigento e Trapani e arricchito da esperienze professionali in studi di 
+        riconosciuto valore, ha scelto di lavorare in modo indipendente per dedicare tempo, ascolto 
+        e cura a ogni singolo progetto. Non segue tendenze passeggere, ma cerca soluzioni 
+        durature, funzionali e in armonia con chi le abita.
+      </p>
+
+      <p>
+        I suoi interventi spaziano dalla ristrutturazione integrale di appartamenti storici 
+        alla progettazione di nuovi interni su misura, dal restyling di negozi a consulenze 
+        tecniche per l’efficientamento energetico e l’accessibilità. Ogni lavoro nasce da un 
+        confronto diretto con il cliente, senza intermediari né presentazioni appariscenti: 
+        perché la fiducia si costruisce con i fatti, non con le parole.
+      </p>
+
+      <p>
+        Vive e lavora a Partinico(Pa), dove lo studio è punto di incontro tra tradizione costruttiva 
+        locale e sensibilità contemporanea.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Studio Ascone Modica. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
