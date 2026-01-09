@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contatti — Studio Ascone Modica</title>
+  <meta name="description" content="Mettiti in contatto con lo studio per richieste di informazioni, preventivi o collaborazioni." />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .back-link {
+      display: inline-block;
+      margin-bottom: var(--spacing-md);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      border-bottom: 1px solid transparent;
+    }
+    .back-link:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .contact-info {
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.8rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.4rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: var(--text);
+      color: white;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #000;
+    }
+
+    .form-note {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Torna alla home</a>
+      <h1>Contatti</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="contact-info">
+        <p>
+          Per informazioni su progetti, consulenze o collaborazioni, 
+          compila il modulo sottostante oppure scrivimi direttamente all’indirizzo:
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:tua@email.it">tua@email.it</a><br>
+          <strong>Telefono:</strong> <a href="tel:+39123456789">+39 123 456 789</a>
+        </p>
+      </div>
+
+      <!-- Form con Formspree -->
+      <form action="https://formspree.io/f/MODIFICA_QUESTO_CODICE" method="POST">
+        <div class="form-group">
+          <label for="name">Nome e cognome</label>
+          <input type="text" id="name" name="nome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Messaggio</label>
+          <textarea id="message" name="messaggio" placeholder="Descrivi brevemente il tuo progetto o la tua richiesta..." required></textarea>
+        </div>
+
+        <!-- Campo nascosto per personalizzare l’oggetto dell’email -->
+        <input type="hidden" name="_subject" value="Nuovo messaggio dal sito Studio [Cognome]" />
+
+        <!-- Redirect dopo invio (opzionale) -->
+        <input type="hidden" name="_next" value="/grazie.html" />
+
+        <button type="submit">Invia messaggio</button>
+
+        <p class="form-note">
+          I tuoi dati saranno utilizzati solo per rispondere a questa richiesta, 
+          in conformità con la nostra <a href="privacy.html">Privacy Policy</a>.
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Studio [Cognome]. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
